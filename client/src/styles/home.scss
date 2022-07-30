@@ -1,0 +1,61 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-div {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.profile-photo {
+    height: 500px;
+    width: 500px;
+    float: right;
+    margin: 3em 10em 0 0;
+    @media screen and (max-width: 768px) {
+        margin: 1rem;
+    }
+}
+
+.intro-message-container {
+    margin: auto;
+    width: 50%;
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        position: relative;
+        width: 94%;
+    }
+}
+
+.intro-message {
+    font-size: 30px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    margin-top: 16%;
+    color: white;
+    background-color: #c3f3ea;
+    border-radius: 5px;
+    padding: 4px;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        left: 0;
+    }
+}
+
+.about-me-container {
+    margin: auto;
+    width: 50%;
+}
+
+.about-me-title {
+    border-bottom: solid #c3f3ea 1px;
+    width: fit-content;
+}
+
